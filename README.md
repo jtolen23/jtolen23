@@ -1,12 +1,12 @@
 # Jesus Tolentino
 
-Data engineering and defense budget systems. I'm starting to dabble into code now that AI makes it more consumable, hoping to bring my projects to life and provide a different perspective.
+A bit about myself. I enjoy finance and data engineering. Currently engaging heavy into code now that AI makes it more consumable, hoping to bring my projects to life and different perspectives.
 
 ## What I do
 
-I'm at the intersection of finance and data engineering in the defense sector. My day job is designing and building budget execution databases, automated reporting, and data systems for DoD. I know PPBE (Planning, Programming, Budgeting, and Execution), appropriations law, and understand how defense money actually moves in systems.
+I'm at the intersection of finance and data engineering in the defense sector. My day job is designing and building budget execution databases, automated reporting, and data systems. I know PPBE (Planning, Programming, Budgeting, and Execution), appropriations law, and understand how defense money actually moves in systems.
 
-I'm building this portfolio to show that work in public, using open government data and continue to grow my skillset.
+I'm creating this github to create a portfolio and show it publicly. I will use publicly available data and continue to grow my skillset.
 
 ## Current projects
 
@@ -26,7 +26,3 @@ I'm building this portfolio to show that work in public, using open government d
 ## Background
 
 Finance / Data Engineer / working my AI skillset
-
-## Contact
-
-j.m.tolentino@outlook.com
