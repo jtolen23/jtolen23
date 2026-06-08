@@ -6,7 +6,7 @@ A bit about myself. I enjoy finance and data engineering. Currently engaging hea
 
 I'm at the intersection of finance and data engineering in the defense sector. My day job is designing and building budget execution databases, automated reporting, and data systems. I know PPBE (Planning, Programming, Budgeting, and Execution), appropriations law, and understand how defense money actually moves in systems.
 
-I'm creating this github to create a portfolio and show it publicly. I will use publicly available data and continue to grow my skillset.
+This github is my portfolio. All data is publicly available.
 
 ## Current projects
 
