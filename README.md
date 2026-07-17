@@ -1,6 +1,6 @@
 # Jesus Tolentino
 
-Data engineering and defense budget systems. I'm starting to dabble into code now that AI makes it more consumable, hoping to bring my projects to life and provide a different perspective.
+A bit about myself. I enjoy finance, data engineering, and AI. Currently engaging heavy into code now that AI makes it more consumable, hoping to bring my projects to life and different perspectives.
 
 ## What I do
 
