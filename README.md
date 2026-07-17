@@ -4,28 +4,23 @@ Data engineering and defense budget systems. I'm starting to dabble into code no
 
 ## What I do
 
-I'm at the intersection of finance and data engineering in the defense sector. My day job is designing and building budget execution databases, automated reporting, and data systems for DoD. I know PPBE (Planning, Programming, Budgeting, and Execution), appropriations law, and understand how defense money actually moves in systems.
+I'm at the intersection of finance and data engineering in the defense sector. My day job is designing and building budget execution databases, automated reporting, and data systems for DoD. I know PPBE (Planning, Programming, Budgeting, and Execution), appropriations law, and how defense money actually moves through systems.
 
-I'm building this portfolio to show that work in public, using open government data and continue to grow my skillset.
+I'm building this portfolio to show that work in public, using open government data.
 
-## Current projects
+## Projects
 
-| Project | What it is | Stack |
-|---------|-----------|-------|
-| **Budget Execution Tracker** | Normalized relational database modeling DoD budget execution (obligations, expenditures, appropriations, period-of-availability) | Azure SQL, Python, dbt |
-| **USAspending Data Warehouse** | Cloud data warehouse built on federal contract/grant data from the USAspending API, Medallion Architecture | Azure Data Factory, ADLS Gen2, dbt, Power BI |
-| **Treasury Fiscal Data Pipeline** | Scheduled ingestion pipeline pulling daily federal financial data from Treasury's Fiscal Data API | Azure Data Factory, Azure SQL, Power BI |
-| **LLM Budget Document Parser** | AI agent that extracts structured data from DoD budget justification exhibits (P-1, R-1 forms) | Python, Claude API, Azure SQL |
+| Project | What it is | Stack | Status |
+|---------|-----------|-------|--------|
+| **Budget Execution Tracker** | Normalized relational database modeling DoD budget execution (obligations, expenditures, appropriations, period-of-availability), with a synthetic data generator that reconciles to source and dbt marts for burn rate, obligation rates, and ULO aging | Azure SQL, Python, dbt | Built |
+| **Obligate** | Terminal game that gamifies my own Python and SQL learning. XP is earned only when pytest checks pass; game state is a SQLite event ledger I designed as an ERD before writing code; achievements and streaks are SQL views over the event log | Python (Rich), SQLite, pytest | In build |
+| **LLM Budget Document Parser** | Agent that extracts structured data from public DoD budget justification exhibits (R-1, P-1), with a validation layer that ties extracted totals back to the page | Python, LLM API, Azure SQL | Next |
 
 ## Tech
 
-**Strong:** SQL, data modeling / ERD design, Power BI/Tableau, Excel, PPBE / defense budget analysis
+**Strong:** SQL, data modeling and ERD design, Power BI, Excel, PPBE and defense budget analysis
 
-**Building:** Azure (Data Factory, ADLS Gen2, SQL Database, Fabric), dbt, Python for data engineering, Airflow
-
-## Background
-
-Finance / Data Engineer / working my AI skillset
+**Building:** Python for data engineering, dbt, Azure SQL, and the Databricks/Spark lakehouse stack
 
 ## Contact
 
