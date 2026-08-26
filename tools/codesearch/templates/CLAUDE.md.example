@@ -1,0 +1,15 @@
+<!-- Append to your project's CLAUDE.md. Keep it this short: CLAUDE.md is
+     loaded into every single turn, so it pays for facts, not procedures. -->
+
+## Finding things in this codebase
+
+This repo has a structural index at `.codesearch/index.db`, refreshed at
+session start. Query it instead of reading files to orient yourself:
+
+    python3 tools/codesearch/codesearch.py search "<question>"
+    python3 tools/codesearch/codesearch.py refs <symbol>    # blast radius
+    python3 tools/codesearch/codesearch.py show <path>:<a>-<b>
+
+Run `/codesearch` for the full retrieval ladder. For anything spanning several
+files, delegate to the `codebase-researcher` agent so the search stays out of
+this conversation.
