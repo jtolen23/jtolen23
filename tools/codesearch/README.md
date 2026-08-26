@@ -9,8 +9,18 @@ developer machine).
 
 ## Install
 
-Copy `codesearch.py` into your project as `tools/codesearch/codesearch.py`,
-then:
+```bash
+./install.sh --dry-run /path/to/your/repo    # inspect
+./install.sh /path/to/your/repo              # do it
+```
+
+`install.sh` places the tool, skill, subagent and SessionStart hook, merges
+into an existing `.claude/settings.json` and `CLAUDE.md` rather than
+overwriting them, adds `.codesearch/` to `.gitignore`, and builds the first
+index. It is idempotent and takes `--dry-run`.
+
+By hand instead: copy `codesearch.py` to `tools/codesearch/codesearch.py`, copy
+`templates/` into place, then
 
 ```bash
 echo ".codesearch/" >> .gitignore     # the index is derived state

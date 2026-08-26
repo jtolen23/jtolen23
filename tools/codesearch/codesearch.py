@@ -26,6 +26,7 @@ import hashlib
 import json
 import os
 import re
+import signal
 import sqlite3
 import subprocess
 import sys
@@ -1036,6 +1037,12 @@ def main(argv: Optional[List[str]] = None) -> None:
 
     add("stats", help="index size and coverage")
 
+    # Behave like a normal unix filter when piped into `head` or `less`.
+    try:
+        signal.signal(signal.SIGPIPE, signal.SIG_DFL)
+    except (AttributeError, ValueError):
+        pass  # SIGPIPE does not exist on Windows
+
     args = p.parse_args(argv)
     args.budget = getattr(args, "budget", 4000)
     args.root = repo_root(getattr(args, "root", "."))
@@ -1060,4 +1067,12 @@ def main(argv: Optional[List[str]] = None) -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except BrokenPipeError:
+        # Reached only where SIGPIPE is unavailable. Redirect stdout to devnull
+        # so the interpreter's shutdown flush cannot raise a second time.
+        os.dup2(os.open(os.devnull, os.O_WRONLY), sys.stdout.fileno())
+        sys.exit(0)
+    except KeyboardInterrupt:
+        sys.exit(130)

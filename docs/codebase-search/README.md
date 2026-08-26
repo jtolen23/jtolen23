@@ -232,6 +232,17 @@ the mart that consumes them.
 Per project — the Budget Execution Tracker first, since it has both Python and
 dbt and will show the cross-language win immediately.
 
+One command, from a checkout of this repo:
+
+```bash
+tools/codesearch/install.sh --dry-run ~/path/to/budget-execution-tracker
+tools/codesearch/install.sh ~/path/to/budget-execution-tracker
+```
+
+It is idempotent, merges into an existing `.claude/settings.json` and
+`CLAUDE.md` instead of overwriting them, and builds the first index. The
+equivalent by hand:
+
 ```bash
 cd ~/path/to/budget-execution-tracker
 mkdir -p tools/codesearch scripts .claude/skills/codesearch .claude/agents
